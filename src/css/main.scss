@@ -1,6 +1,7 @@
 $bgColor: #333;
 $textColor: #f9f9f9;
 body {
+    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     background-color: $bgColor;
     color: $textColor;
@@ -48,6 +49,24 @@ canvas {
 #forLoading.fade {
     opacity: 0;
     z-index: -1;
+}
+
+#ie9Warning {
+    background-color: rgb(181, 41, 137);
+    box-shadow: 0 5px 15px #000;
+    width: 400px;
+    padding: 15px;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    margin-left: -200px;
+    z-index: 99;
+    font-size: 3rem;
+    display: none;
+}
+
+#ie9Warning.show {
+    display: block;
 }
 
 .info {
